@@ -1,6 +1,9 @@
+# Movies Database API Intergration
+This project integrates with the movies Database API to retrieve movies related data.
+
 # API Overview
 
-This API allows interaction with the backend services that power our application. It supports various operations such as fetching data, submitting forms, and user authentication.
+This API allows interaction with the backend services that power our application. It supports various operations such as searching and fetching data concerning the movies industry like the movies, tv shows, cast and crew information, trailers, awards etc.
 
 ## Version
 
@@ -9,14 +12,13 @@ Current API Version: **v1**
 ---
 
 ## Available Endpoints
-
-- `GET /api/users` – Retrieves a list of all users.
-- `GET /api/users/:id` – Retrieves detailed information for a specific user.
-- `POST /api/users` – Creates a new user.
-- `PUT /api/users/:id` – Updates information for a specific user.
-- `DELETE /api/users/:id` – Deletes a user from the system.
-- `POST /api/auth/login` – Authenticates a user and returns a JWT token.
-- `POST /api/auth/register` – Registers a new user account.
+-  `GET /titles` - Retrieve a list of movie titles with optional filters
+- `GET /titles/{id}` - Get detailed information about a specific movie
+- `GET /search` - Search for movies by title, genre, or keyword
+- `GET /trending` - Fetch currently trending movies
+- `GET /upcoming` - Retrieve upcoming movie releases
+- `GET /actors` - Get information about actors/actresses
+- `GET /actors/{id}` - Get detailed information about a specific actor
 
 ---
 
